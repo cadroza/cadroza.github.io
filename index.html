@@ -9,9 +9,8 @@
     <meta property="og:title" content="Cadroza" />
     <meta property="og:description" content="Your all in one fitness app." />
     <meta property="og:url" content="https://cadroza.com" />
-    <meta property="og:image" content="favicon.png" />
     <meta property="og:type" content="website" />
-    
+
     <title>Cadroza</title>
 
     <style>
@@ -28,6 +27,23 @@
             flex-direction: column;
             background-color: #bff8f8;
         }
+
+        .logocontainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 5vh;
+            left: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            width: 50vw; 
+            max-width: 450px; 
+            min-width: 220px; 
+            height: auto;
+        } 
 
         .container {
             flex: 1; 
@@ -52,6 +68,10 @@
 </head>
 
 <body>
+    <div class="logocontainer">
+        <img src="favicon.png" class="logo" alt="Cadroza Logo">
+    </div>
+
     <div class="container">
         <h1>Your all in one fitness app.</h1>
     </div>
