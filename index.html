@@ -1,121 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A new fitness app that combines AI calorie tracking, with meal prep, workout logs, habits, and more. Releasing to the public in February 2027.">
+        <meta name="author" content="Cadroza">
+        <meta property="og:site_name" content="Cadroza" />
+        <meta property="og:title" content="A new all in one fitness app." />
+        <meta property="og:description" content="A new fitness app that combines AI calorie tracking, meal prep, workouts, habits, and more." />
+        <meta property="og:url" content="https://cadroza.com" />
+        <meta property="og:image" content="http://cadroza.com/meta.png" />
+        <meta property="og:type" content="website" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A new fitness app that combines AI calorie tracking, with meal prep, workout logs, habits, and more. Releasing to the public in February 2027.">
-    <meta name="author" content="Cadroza">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
 
-    <meta property="og:site_name" content="Cadroza" />
-    <meta property="og:title" content="A new all in one fitness app." />
-    <meta property="og:description" content="A new fitness app that combines AI calorie tracking, meal prep, workouts, habits, and more." />
-    <meta property="og:url" content="https://cadroza.com" />
-    <meta property="og:image" content="http://cadroza.com/meta.png" />
-    <meta property="og:type" content="website" />
+        <title>Cadroza</title>
 
-    <title>Cadroza</title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
 
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                background-color: #bff8f8;
+            }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            background-color: #bff8f8;
-        }
+            .logocontainer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                top: 5vh;
+                left: 0;
+                z-index: 10;
+            }
 
-        .logocontainer {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            top: 5vh;
-            left: 0;
-            z-index: 10;
-        }
+            .logo {
+                width: 50vw; 
+                max-width: 450px; 
+                min-width: 220px; 
+                height: auto;
+            } 
 
-        .logo {
-            width: 50vw; 
-            max-width: 450px; 
-            min-width: 220px; 
-            height: auto;
-        } 
+            .container {
+                flex: 1; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
 
-        .container {
-            flex: 1; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
+            footer {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding-bottom: 20px;
+            }
 
-        footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            padding-bottom: 20px;
-        }
+            .socialmedia {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 12px;
+            }
 
-        .socialmedia {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 12px;
-        }
+            .sociallink {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                text-decoration: none;
+                color: #111111;
+                font-weight: bold;
+                font-size: 1rem;
+                transition: opacity 0.2s ease;
+                padding-right: 5px;
+            }
 
-        .sociallink {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            text-decoration: none;
-            color: #111111;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: opacity 0.2s ease;
-        }
+            .sociallink:hover {
+                opacity: 0.7;
+            }
 
-        .sociallink:hover {
-            opacity: 0.7;
-        }
+            .sociallink img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+        </style>
+    </head>
 
-        .sociallink img {
-            width: 20px;
-            height: 20px;
-            object-fit: contain;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="logocontainer">
-        <img src="favicon.png" class="logo" alt="Cadroza Logo">
-    </div>
-
-    <div class="container">
-        <h1>Your all in one fitness app.</h1>
-    </div>
-
-    <footer>
-        <div class="socialmedia">
-            <a href="https://instagram.com/cadroza.app" class="sociallink">
-                <img src="instagram.png" alt="Instagram logo">
-                <span>Instagram</span>
-            </a>
+    <body>
+        <div class="logocontainer">
+            <img src="favicon.png" class="logo" alt="Cadroza Logo">
         </div>
 
-        <h3>Coming soon, February 2027.</h3>
-    </footer>
-</body>
+        <div class="container">
+            <h1>Your all in one fitness app.</h1>
+        </div>
+
+        <footer>
+            <div class="socialmedia">
+                <a href="https://instagram.com/cadroza.app" class="sociallink">
+                    <img src="instagram.png" alt="Instagram logo">
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://tiktok.com/@cadroza" class="sociallink">
+                    <img src="tiktok.png" alt="TikTok logo">
+                    <span>TikTok</span>
+                </a>
+            </div>
+
+            <h3>Coming soon, February 2027.</h3>
+        </footer>
+    </body>
 </html>
