@@ -64,6 +64,33 @@
             text-align: center;
             padding-bottom: 20px;
         }
+
+        .socialmedia {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .sociallink {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #111111;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: opacity 0.2s ease;
+        }
+
+        .sociallink:hover {
+            opacity: 0.7;
+        }
+
+        .sociallink img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
     </style>
 </head>
 
@@ -77,6 +104,13 @@
     </div>
 
     <footer>
+        <div class="socialmedia">
+            <a href="https://instagram.com/cadroza.app" class="sociallink">
+                <img src="instagram.png" alt="Instagram logo">
+                <span>Instagram</span>
+            </a>
+        </div>
+        
         <p>Coming soon, February 2027.</p>
     </footer>
 </body>
